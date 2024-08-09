@@ -25,7 +25,7 @@ if will_rain:
     message = client.messages.create(
         body="It will rain tomorrow, carry an umbrella",
         from_="+12513254331",
-        to="+923035987180",
+        to= os.getenv("MY_PHONE_NUMBER"),
     )
 
 print("check your messages")
